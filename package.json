@@ -20,5 +20,9 @@
   "homepage": "https://github.com/andradag/private-live-auction-server#readme",
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "apollo-server": "^3.6.3",
+    "graphql": "^16.3.0"
   }
 }
