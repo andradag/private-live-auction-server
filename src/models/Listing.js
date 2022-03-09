@@ -1,7 +1,4 @@
-import mongoose from "mongoose";
-
 const { Schema, model } = mongoose;
-const imageSchema = require("./Image");
 
 const listingSchema = new Schema({
   title: {
@@ -13,19 +10,26 @@ const listingSchema = new Schema({
     type: String,
     required: true,
   },
-  images: [imageSchema],
+  //   images: [
+  //       {
+  //           type: String,
+  //       }
+  //   ],
   category: {
-    type: String,
+    type: Schema.Types.ObjectId,
+    ref: "Category",
     required: true,
   },
   reserveAmount: {
-    type: Int,
+    type: Number,
     required: true,
   },
   startingBid: {
-    type: Int,
+    type: Number,
     required: true,
   },
 });
 
-export const Listing = model("Listing", listingSchema);
+const Listing = model("Listing", listingSchema);
+
+module.exports = Listing;
