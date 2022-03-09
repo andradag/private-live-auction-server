@@ -4,7 +4,6 @@ import {signToken} from "../utils/auth.js";
 
 export const login = async (_, {input}) => {
 	try {
-		console.log("Resolver hit");
 		const userFromDb = await User.findOne({email: input.email});
 
 		if (!userFromDb) {
@@ -18,7 +17,6 @@ export const login = async (_, {input}) => {
 			console.log("[ERROR]: Failed to login || Incorrect password");
 			throw new AuthenticationError("Failed to login");
 		}
-
 		console.log("Successfully logged in");
 		return {
 			token: signToken(userFromDb),
