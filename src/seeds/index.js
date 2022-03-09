@@ -1,13 +1,11 @@
-import "dotenv/config";
-import mongoose from "mongoose";
+require("dotenv").config();
+const mongoose = require("mongoose");
 
-// import User from "../models/index";
+const { User } = require("../models");
+const { Category } = require("../models");
+const { Listing } = require("../models");
 
-import {User} from "../models/index";
-import {Category} from "../models/index";
-import {Listing} from "../models/index";
-
-import { userSeed } from "./data/userData.js";
+const userSeed = require("./data/userData");
 const categoryData = require("../seeds/data/categoryData");
 
 const init = async () => {
@@ -27,7 +25,7 @@ const init = async () => {
     await Category.deleteMany({});
     await Category.insertMany(categoryData);
 
-    console.log("[INFO]: Successfully seeded users");
+    console.log("[INFO]: Successfully seeded categories");
 
     await mongoose.disconnect();
   } catch (error) {

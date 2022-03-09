@@ -1,4 +1,4 @@
-import {User} from "./User.js";
+const User = require("./User");
+const Category = require("./Category");
 
-export default User;
-
+module.exports = { User, Category };

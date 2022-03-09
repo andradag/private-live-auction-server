@@ -1,13 +1,15 @@
-import {getSingleUser} from "./getSingleUser.js";
-import {addUser} from "./addUser.js";
-import {login} from "./login.js";
+const getSingleUser = require("./getSingleUser");
+const addUser = require("./addUser");
+const login = require("./login");
 
-export const resolvers = {
-	Query: {
-		getSingleUser,
-	},
-	Mutation: {
-		addUser,
-		login,
-	},
+const resolvers = {
+  Query: {
+    getSingleUser,
+  },
+  Mutation: {
+    addUser,
+    login,
+  },
 };
+
+module.exports = resolvers;

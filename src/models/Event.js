@@ -1,6 +1,6 @@
-const { Listing } = require("./Listing");
+const { Schema, model } = require("mongoose");
 
-const { Schema, model } = mongoose;
+const { Listing } = require("./Listing");
 
 const eventSchema = new Schema({
   title: {
@@ -24,3 +24,5 @@ const eventSchema = new Schema({
 });
 
 const Event = model("Event", eventSchema);
+
+module.exports = Event;

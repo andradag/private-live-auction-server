@@ -1,15 +1,17 @@
-import User from "../models/index.js";
-import {signToken} from "../utils/auth.js";
+const User = require("../models");
+const { signToken } = require("../utils/auth");
 
-export const addUser = async (_, {userInput}) => {
-	try {
-		const newUser = await User.create(userInput);
+const addUser = async (_, { userInput }) => {
+  try {
+    const newUser = await User.create(userInput);
 
-		return {
-			token: signToken(newUser),
-			user: newUser,
-		};
-	} catch (error) {
-		console.log(`[ERROR]: Failed to create User || ${error.message}`);
-	}
+    return {
+      token: signToken(newUser),
+      user: newUser,
+    };
+  } catch (error) {
+    console.log(`[ERROR]: Failed to create User || ${error.message}`);
+  }
 };
+
+module.exports = addUser;
