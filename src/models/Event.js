@@ -1,5 +1,4 @@
-import mongoose from "mongoose";
-import { Listing } from "./Listing";
+const { Listing } = require("./Listing");
 
 const { Schema, model } = mongoose;
 
@@ -24,4 +23,4 @@ const eventSchema = new Schema({
   },
 });
 
-export const Event = model("Event", eventSchema);
+const Event = model("Event", eventSchema);
