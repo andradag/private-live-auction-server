@@ -1,33 +1,34 @@
 {
-  "name": "private-live-auction-server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "nodemon src/server.js",
-    "start": "node src/server.js",
-    "seed": "node src/seeds/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andradag/private-live-auction-server.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/andradag/private-live-auction-server/issues"
-  },
-  "homepage": "https://github.com/andradag/private-live-auction-server#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  },
-  "dependencies": {
-    "apollo-server": "^3.6.3",
-    "bcrypt": "^5.0.1",
-    "dotenv": "^16.0.0",
-    "graphql": "^16.3.0",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.2.4"
-  }
+	"name": "private-live-auction-server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon src/server.js",
+		"start": "node src/server.js",
+		"seed": "node src/seeds/index.js"
+	},
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/andradag/private-live-auction-server.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/andradag/private-live-auction-server/issues"
+	},
+	"homepage": "https://github.com/andradag/private-live-auction-server#readme",
+	"devDependencies": {
+		"nodemon": "^2.0.15"
+	},
+	"dependencies": {
+		"apollo-server": "^3.6.3",
+		"bcrypt": "^5.0.1",
+		"dotenv": "^16.0.0",
+		"graphql": "^16.3.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^6.2.4"
+	}
 }
