@@ -1,5 +1,6 @@
 import {getSingleUser} from "./getSingleUser.js";
 import {addUser} from "./addUser.js";
+import {login} from "./login.js";
 
 export const resolvers = {
 	Query: {
@@ -7,5 +8,6 @@ export const resolvers = {
 	},
 	Mutation: {
 		addUser,
+		login,
 	},
 };
