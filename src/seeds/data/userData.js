@@ -1,5 +1,8 @@
-const userSeed = [
+[
   {
+    _id: {
+      $oid: "622a49eee5faa8bacb0a9029",
+    },
     username: "Bazza",
     firstName: "Barry",
     lastName: "Henry",
@@ -7,6 +10,9 @@ const userSeed = [
     password: "Password123",
   },
   {
+    _id: {
+      $oid: "622a49eee5faa8bacb0a902a",
+    },
     username: "Mikey",
     firstName: "Michael",
     lastName: "Hughes",
@@ -14,6 +20,9 @@ const userSeed = [
     password: "Password123",
   },
   {
+    _id: {
+      $oid: "622a49eee5faa8bacb0a902b",
+    },
     username: "Haz",
     firstName: "Harry",
     lastName: "Healy",
@@ -21,6 +30,9 @@ const userSeed = [
     password: "Password123",
   },
   {
+    _id: {
+      $oid: "622a49eee5faa8bacb0a902c",
+    },
     username: "Carly",
     firstName: "Carl",
     lastName: "Frox",
@@ -28,6 +40,9 @@ const userSeed = [
     password: "Password123",
   },
   {
+    _id: {
+      $oid: "622a49eee5faa8bacb0a902d",
+    },
     username: "Gaz",
     firstName: "Garret",
     lastName: "Crotty",
@@ -35,6 +50,9 @@ const userSeed = [
     password: "Password123",
   },
   {
+    _id: {
+      $oid: "622a49eee5faa8bacb0a902e",
+    },
     username: "Sammy",
     firstName: "Samantha",
     lastName: "Jules",
@@ -42,5 +60,3 @@ const userSeed = [
     password: "Password123",
   },
 ];
-
-module.exports = userSeed;
