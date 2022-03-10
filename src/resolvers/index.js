@@ -1,6 +1,7 @@
 const getSingleUser = require("./getSingleUser");
 const addUser = require("./addUser");
 const login = require("./login");
+const addListing = require("./addListing");
 
 const resolvers = {
   Query: {
@@ -9,6 +10,7 @@ const resolvers = {
   Mutation: {
     addUser,
     login,
+    addListing,
   },
 };
 

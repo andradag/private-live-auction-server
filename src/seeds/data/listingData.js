@@ -1,44 +1,38 @@
-const listings = [
+[
   {
-    title: "Bazza",
-    description: "Barry",
-    reserveAmount: 100,
-    startingBid: 12,
+    _id: {
+      $oid: "622a4f473c448a8fc2d1bd39",
+    },
+    title: "car",
+    description: "fast car",
+    category: {
+      $oid: "622a49eee5faa8bacb0a9034",
+    },
+    reserveAmount: 1000,
+    startingBid: 500,
   },
   {
-    title: "fgh",
-    description: "sss",
-    reserveAmount: 100,
-    startingBid: 12,
+    _id: {
+      $oid: "622a4fb33c448a8fc2d1bd3b",
+    },
+    title: "jaguar",
+    description: "fast car",
+    category: {
+      $oid: "622a49eee5faa8bacb0a9034",
+    },
+    reserveAmount: 2000,
+    startingBid: 800,
   },
   {
-    title: "aaa",
-    description: "asdsasf",
-    reserveAmount: 100,
-    startingBid: 12,
-  },
-  {
-    title: "nnnn",
-    description: "Bafgdfgrry",
-    reserveAmount: 100,
-    startingBid: 12,
-  },
-  {
-    title: "oooo",
-    description: "fdgdff",
-    reserveAmount: 100,
-    startingBid: 12,
-  },
-  {
-    title: "ertet",
-    description: "zcvbv",
-    reserveAmount: 100,
-    startingBid: 12,
+    _id: {
+      $oid: "622a4ff83c448a8fc2d1bd3d",
+    },
+    title: "flat",
+    description: "ground floor",
+    category: {
+      $oid: "622a49eee5faa8bacb0a9034",
+    },
+    reserveAmount: 2000,
+    startingBid: 800,
   },
 ];
-
-// Get all categories from DB
-
-// map through listing and assign category
-
-// Seed NEW listings

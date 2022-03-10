@@ -9,6 +9,15 @@ const typeDefs = gql`
     email: String!
   }
 
+  type Listing {
+    _id: ID!
+    title: String!
+    description: String!
+    category: String!
+    reserveAmount: Float!
+    startingBid: Float!
+  }
+
   type Auth {
     token: ID!
     user: User
@@ -31,9 +40,18 @@ const typeDefs = gql`
     password: String!
   }
 
+  input ListingInput {
+    title: String!
+    description: String!
+    category: String!
+    reserveAmount: Float!
+    startingBid: Float!
+  }
+
   type Mutation {
     addUser(userInput: UserInput!): Auth
     login(input: LoginInput!): Auth
+    addListing(listingInput: ListingInput!): Listing
   }
 `;
 
