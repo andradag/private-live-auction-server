@@ -18,6 +18,11 @@ const typeDefs = gql`
     startingBid: Float!
   }
 
+  type Category {
+    _id: ID!
+    title: String!
+  }
+
   type Auth {
     token: ID!
     user: User
@@ -25,6 +30,7 @@ const typeDefs = gql`
 
   type Query {
     getSingleUser: User
+    getAllCategories: [Category]
   }
 
   input UserInput {
