@@ -1,5 +1,5 @@
 const { ApolloError } = require("apollo-server-errors");
-const Category = require("../models");
+const { Category } = require("../models");
 
 const getAllCategories = async (_, __, context) => {
   try {
