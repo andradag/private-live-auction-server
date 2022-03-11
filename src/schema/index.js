@@ -34,6 +34,7 @@ const typeDefs = gql`
     getSingleUser(userId: ID!): User
     getAllCategories: [Category]
     getAllListings: [Listing]
+    getListingsWithStatus(status: String!): [Listing]
   }
 
   input UserInput {

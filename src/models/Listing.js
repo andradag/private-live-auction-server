@@ -31,6 +31,7 @@ const listingSchema = new Schema({
   status: {
     type: String,
     required: true,
+    default: "Upcoming",
     enum: ["Live", "Upcoming"],
   },
 });
