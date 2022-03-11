@@ -17,6 +17,7 @@ const typeDefs = gql`
     category: String!
     reserveAmount: Float!
     startingBid: Float!
+    status: String!
   }
 
   type Category {
