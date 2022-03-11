@@ -7,6 +7,7 @@ const typeDefs = gql`
     firstName: String!
     lastName: String!
     email: String!
+    savedListings: [Listing]
   }
 
   type Listing {
@@ -29,8 +30,9 @@ const typeDefs = gql`
   }
 
   type Query {
-    getSingleUser: User
+    getSingleUser(userId: ID!): User
     getAllCategories: [Category]
+    getAllListings: [Listing]
   }
 
   input UserInput {
@@ -58,6 +60,7 @@ const typeDefs = gql`
     addUser(userInput: UserInput!): Auth
     login(input: LoginInput!): Auth
     addListing(listingInput: ListingInput!): Listing
+    saveAListing(input: ID!): User
   }
 `;
 
