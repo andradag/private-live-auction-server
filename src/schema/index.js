@@ -7,6 +7,7 @@ const typeDefs = gql`
     firstName: String!
     lastName: String!
     email: String!
+    savedListings: [Listing]
   }
 
   type Listing {
@@ -58,6 +59,7 @@ const typeDefs = gql`
     addUser(userInput: UserInput!): Auth
     login(input: LoginInput!): Auth
     addListing(listingInput: ListingInput!): Listing
+    saveAListing(input: ID!): User
   }
 `;
 

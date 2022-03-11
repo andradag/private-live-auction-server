@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const { hash, compare } = require("bcrypt");
+const Listing = require("./Listing");
 
 const { Schema, model } = mongoose;
 
@@ -29,6 +30,7 @@ const userSchema = new Schema(
       required: true,
       minlength: 8,
     },
+    savedListings: [{ type: Schema.Types.ObjectId, ref: Listing }],
   },
   // set this to use virtual below
   {

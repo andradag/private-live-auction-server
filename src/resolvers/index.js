@@ -3,6 +3,7 @@ const addUser = require("./addUser");
 const login = require("./login");
 const addListing = require("./addListing");
 const getAllCategories = require("./getAllCategories");
+const saveAListing = require("./saveAListing");
 
 const resolvers = {
   Query: {
@@ -13,6 +14,7 @@ const resolvers = {
     addUser,
     login,
     addListing,
+    saveAListing,
   },
 };
 
