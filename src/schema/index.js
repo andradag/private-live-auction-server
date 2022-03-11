@@ -29,7 +29,7 @@ const typeDefs = gql`
   }
 
   type Query {
-    getSingleUser: User
+    getSingleUser(userId: ID!): User
     getAllCategories: [Category]
   }
 
