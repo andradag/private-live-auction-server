@@ -33,8 +33,8 @@ const typeDefs = gql`
   type Query {
     getSingleUser(userId: ID!): User
     getAllCategories: [Category]
-    getAllListings: [Listing]
-    getListingsWithStatus(status: String!): [Listing]
+    getSingleListing(_id: ID!): Listing
+    getListings(status: String, category: ID): [Listing]
   }
 
   input UserInput {
