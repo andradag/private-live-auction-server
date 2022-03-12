@@ -5,12 +5,14 @@ const addListing = require("./addListing");
 const getAllCategories = require("./getAllCategories");
 const saveAListing = require("./saveAListing");
 const getAllListings = require("./getAllListings");
+const getListingsWithStatus = require("./getListingsWithStatus");
 
 const resolvers = {
   Query: {
     getSingleUser,
     getAllCategories,
     getAllListings,
+    getListingsWithStatus,
   },
   Mutation: {
     addUser,

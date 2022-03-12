@@ -28,6 +28,12 @@ const listingSchema = new Schema({
     type: Number,
     required: true,
   },
+  status: {
+    type: String,
+    required: true,
+    default: "Upcoming",
+    enum: ["Live", "Upcoming"],
+  },
 });
 
 const Listing = model("Listing", listingSchema);

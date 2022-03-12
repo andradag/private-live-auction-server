@@ -17,6 +17,7 @@ const typeDefs = gql`
     category: String!
     reserveAmount: Float!
     startingBid: Float!
+    status: String!
   }
 
   type Category {
@@ -33,6 +34,7 @@ const typeDefs = gql`
     getSingleUser(userId: ID!): User
     getAllCategories: [Category]
     getAllListings: [Listing]
+    getListingsWithStatus(status: String!): [Listing]
   }
 
   input UserInput {
