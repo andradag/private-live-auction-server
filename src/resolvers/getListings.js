@@ -3,9 +3,8 @@ const { Listing } = require("../models");
 
 const getListings = async (_, { status, category }, context) => {
   try {
-    let listings;
+    let listings = [];
     if (status || category) {
-      console.log(status);
       const options = [];
       if (status) {
         options.push({ status });
@@ -19,8 +18,6 @@ const getListings = async (_, { status, category }, context) => {
     } else {
       listings = await Listing.find({});
     }
-
-    if (!listings) return [];
 
     return listings;
   } catch (error) {
