@@ -30,6 +30,11 @@ const typeDefs = gql`
     user: User
   }
 
+  type Bid {
+    amount: Float
+    user: String
+  }
+
   type Query {
     getSingleUser(userId: ID!): User
     getAllCategories: [Category]
@@ -58,11 +63,21 @@ const typeDefs = gql`
     startingBid: Float!
   }
 
+  input AddBidInput {
+    amount: Float!
+    user: String!
+  }
+
   type Mutation {
     addUser(userInput: UserInput!): Auth
     login(input: LoginInput!): Auth
     addListing(listingInput: ListingInput!): Listing
     saveAListing(input: ID!): User
+    addBid(input: AddBidInput!): Bid!
+  }
+
+  type Subscription {
+    auctionBid: Bid
   }
 `;
 
