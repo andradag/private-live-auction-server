@@ -15,7 +15,7 @@ const typeDefs = gql`
     _id: ID!
     title: String!
     description: String!
-    category: String!
+    category: Category!
     reserveAmount: Float!
     startingBid: Float!
     status: String!
