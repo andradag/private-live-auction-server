@@ -7,6 +7,7 @@ const typeDefs = gql`
     firstName: String!
     lastName: String!
     email: String!
+    isAdmin: Boolean!
     savedListings: [Listing]
   }
 
@@ -14,7 +15,7 @@ const typeDefs = gql`
     _id: ID!
     title: String!
     description: String!
-    category: String!
+    category: Category!
     reserveAmount: Float!
     startingBid: Float!
     status: String!
