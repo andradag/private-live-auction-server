@@ -1,38 +1,114 @@
 [
   {
     "_id": {
-      "$oid": "622a4f473c448a8fc2d1bd39"
+      "$oid": "622c9cd3a61f7b647c7365b9"
     },
-    "title": "car",
-    "description": "fast car",
+    "title": "Mona Lisa",
+    "description": "alright piece of art",
     "category": {
-      "$oid": "622a49eee5faa8bacb0a9034"
+      "$oid": "622a49eee5faa8bacb0a9037"
     },
-    "reserveAmount": 1000,
-    "startingBid": 500
+    "reserveAmount": 50,
+    "startingBid": 10,
+    "status": "Live",
+    "__v": 0
   },
   {
     "_id": {
-      "$oid": "622a4fb33c448a8fc2d1bd3b"
+      "$oid": "622c9d22a61f7b647c7365bb"
     },
-    "title": "jaguar",
-    "description": "fast car",
+    "title": "Jaguar",
+    "description": "reasonable car",
     "category": {
-      "$oid": "622a49eee5faa8bacb0a9034"
+      "$oid": "622a49eee5faa8bacb0a9035"
     },
-    "reserveAmount": 2000,
-    "startingBid": 800
+    "reserveAmount": 502,
+    "startingBid": 102,
+    "status": "Upcoming",
+    "__v": 0
   },
   {
     "_id": {
-      "$oid": "622a4ff83c448a8fc2d1bd3d"
+      "$oid": "622c9d45a61f7b647c7365bd"
     },
-    "title": "flat",
-    "description": "ground floor",
+    "title": "Buckingham Palace",
+    "description": "holiday home",
     "category": {
       "$oid": "622a49eee5faa8bacb0a9034"
     },
-    "reserveAmount": 2000,
-    "startingBid": 800
+    "reserveAmount": 50022,
+    "startingBid": 10012,
+    "status": "Live",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "622c9d69a61f7b647c7365bf"
+    },
+    "title": "Bat Sub",
+    "description": "black underwater vehicle",
+    "category": {
+      "$oid": "622a49eee5faa8bacb0a9036"
+    },
+    "reserveAmount": 12,
+    "startingBid": 1,
+    "status": "Upcoming",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "622c9d87a61f7b647c7365c1"
+    },
+    "title": "Rolex",
+    "description": "posh watch",
+    "category": {
+      "$oid": "622a49eee5faa8bacb0a9038"
+    },
+    "reserveAmount": 121,
+    "startingBid": 12,
+    "status": "Upcoming",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "622c9db7a61f7b647c7365c3"
+    },
+    "title": "MacBook Pro",
+    "description": "software develepers dream machine, often covered in stickers",
+    "category": {
+      "$oid": "622a49eee5faa8bacb0a9039"
+    },
+    "reserveAmount": 555,
+    "startingBid": 13,
+    "status": "Upcoming",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "622c9df9a61f7b647c7365c5"
+    },
+    "title": "Cruella's Coat",
+    "description": "only 70% real dog",
+    "category": {
+      "$oid": "622a49eee5faa8bacb0a903a"
+    },
+    "reserveAmount": 444,
+    "startingBid": 132,
+    "status": "Upcoming",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "622c9e59a61f7b647c7365c7"
+    },
+    "title": "Repulsor Boots",
+    "description": "worn by THE Iron Man",
+    "category": {
+      "$oid": "622a49eee5faa8bacb0a903b"
+    },
+    "reserveAmount": 444000,
+    "startingBid": 13200,
+    "status": "Live",
+    "__v": 0
   }
 ]
