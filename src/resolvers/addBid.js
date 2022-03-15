@@ -1,23 +1,32 @@
-const { PubSub } = require("graphql-subscriptions");
+const {Listing} = require("../models");
+const pubsub = require("./pubSub");
 
-const pubsub = new PubSub();
+const addBid = async (_, {input}, {user}) => {
+	try {
+		if (user) {
+			await Listing.findByIdAndUpdate(input.listingId, {
+				$push: {
+					bids: {
+						amount: input.amount,
+						user: user.id,
+					},
+				},
+			});
 
-const addBid = (_, { input }) => {
-  console.log(input);
-  // get input
-  // add to DB
+			const bid = {
+				amount: input.amount,
+				user,
+			};
 
-  pubsub.publish("AUCTION_BID", {
-    auctionBid: {
-      amount: input.amount,
-      user: input.user,
-    },
-  });
+			pubsub.publish("AUCTION_BID", {
+				auctionBid: bid,
+			});
 
-  return {
-    amount: input.amount,
-    user: input.user,
-  };
+			return bid;
+		}
+	} catch (error) {
+		console.log(`[ERROR]: Failed to add bid | ${error.message}`);
+	}
 };
 
 module.exports = addBid;
