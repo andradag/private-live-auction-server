@@ -7,7 +7,8 @@
     "firstName": "Barry",
     "lastName": "Henry",
     "email": "barry@outlook.com",
-    "password": "password123"
+    "password": "password123",
+    "isAdmin": false
   },
   {
     "_id": {
@@ -17,7 +18,8 @@
     "firstName": "Michael",
     "lastName": "Hughes",
     "email": "mike@outlook.com",
-    "password": "password123"
+    "password": "password123",
+    "isAdmin": true
   },
   {
     "_id": {
@@ -27,7 +29,8 @@
     "firstName": "Harry",
     "lastName": "Healy",
     "email": "harry@outlook.com",
-    "password": "password123"
+    "password": "password123",
+    "isAdmin": false
   },
   {
     "_id": {
@@ -37,7 +40,8 @@
     "firstName": "Carl",
     "lastName": "Frox",
     "email": "carl@outlook.com",
-    "password": "password123"
+    "password": "password123",
+    "isAdmin": false
   },
   {
     "_id": {
@@ -47,7 +51,8 @@
     "firstName": "Garret",
     "lastName": "Crotty",
     "email": "gary@outlook.com",
-    "password": "password123"
+    "password": "password123",
+    "isAdmin": false
   },
   {
     "_id": {
@@ -57,6 +62,7 @@
     "firstName": "Samantha",
     "lastName": "Jules",
     "email": "sam@outlook.com",
-    "password": "password123"
+    "password": "password123",
+    "isAdmin": false
   }
 ]

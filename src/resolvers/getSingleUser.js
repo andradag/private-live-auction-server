@@ -3,7 +3,9 @@ const { User } = require("../models");
 
 const getSingleUser = async (_, { userId }, context) => {
   try {
-    const userFromDb = await User.findById({ _id: userId });
+    const userFromDb = await User.findById({ _id: userId }).populate(
+      "savedListings"
+    );
 
     if (!userFromDb) {
       throw new ApolloError("Could not get user");
