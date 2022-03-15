@@ -1,4 +1,5 @@
 const {Schema, model} = require("mongoose");
+const Category = require("./Category");
 
 const listingSchema = new Schema({
 	title: {
@@ -17,7 +18,7 @@ const listingSchema = new Schema({
 	//   ],
 	category: {
 		type: Schema.Types.ObjectId,
-		ref: "Category",
+		ref: Category,
 		required: true,
 	},
 	reserveAmount: {
@@ -42,7 +43,7 @@ const listingSchema = new Schema({
 	bids: [
 		{
 			user: {type: Schema.Types.ObjectId, required: true, ref: "User"},
-			amount: {type: Schema.Types.Decimal128},
+			amount: {type: Number},
 		},
 	],
 });

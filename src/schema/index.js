@@ -24,7 +24,7 @@ const typeDefs = gql`
 
 	type Category {
 		_id: ID!
-		title: String!
+		title: String
 	}
 
 	type Auth {
