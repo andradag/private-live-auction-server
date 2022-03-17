@@ -5,7 +5,11 @@ const addListing = async (_, { listingInput }) => {
   try {
     const newListing = await Listing.create(listingInput);
     console.log(newListing);
-    return newListing;
+
+    const newerListing = await Listing.findById(newListing._id).populate(
+      "category"
+    );
+    return newerListing;
   } catch (error) {
     console.log(`[ERROR]: Failed to create Listing || ${error.message}`);
   }
