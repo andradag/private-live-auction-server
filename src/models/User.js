@@ -19,6 +19,11 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
+    imageUrl: {
+      type: String,
+      default:
+        "https://bookshelf.mml.ox.ac.uk/wp-uploads/2014/12/batman_silhouette_by_icedragon529.jpg",
+    },
     email: {
       type: String,
       required: true,
