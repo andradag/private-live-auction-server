@@ -18,7 +18,6 @@ const addBid = async (_, {input}, {user}) => {
         user,
         listingId: input.listingId,
       };
-      //   console.log(bid);
 
       pubsub.publish("AUCTION_BID", {
         auctionBid: bid,
