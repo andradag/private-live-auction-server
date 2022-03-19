@@ -25,7 +25,7 @@ const getListings = async (_, {status, category}, context) => {
 				.populate({path: "bids", populate: {path: "user", model: "User"}});
 		}
 
-		console.log(listings);
+		// console.log(listings);
 		return listings;
 	} catch (error) {
 		console.log(`[ERROR]: Failed to get listings | ${error.message}`);

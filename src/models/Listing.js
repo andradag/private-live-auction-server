@@ -57,7 +57,6 @@ const listingSchema = new Schema(
 );
 
 listingSchema.virtual("currentBid").get(function () {
-  console.log("hello virtual");
   return (this?.bids && this?.bids.length && this?.bids.pop()) || null;
 });
   
