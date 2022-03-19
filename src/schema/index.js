@@ -36,6 +36,7 @@ const typeDefs = gql`
   type Bid {
     amount: Float!
     user: User!
+    listingId: ID!
   }
 
   type Query {
