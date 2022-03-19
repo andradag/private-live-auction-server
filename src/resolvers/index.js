@@ -31,7 +31,7 @@ const resolvers = {
         () => pubsub.asyncIterator(["AUCTION_BID"]),
         (payload, variables) => {
           // Only push an update if the comment is on
-          //   console.log(payload);
+          // console.log(payload);
           // the correct repository for this operation
           return payload.auctionBid.listingId === variables.listingId;
         }
