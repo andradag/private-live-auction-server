@@ -1,17 +1,26 @@
+const { ApolloError } = require("apollo-server-core");
 const { Listing } = require("../models");
 
-const addListing = async (_, { listingInput }) => {
-  console.log(listingInput);
+const addListing = async (_, { listingInput }, { user }) => {
   try {
-    const newListing = await Listing.create(listingInput);
-    console.log(newListing);
-
-    const newerListing = await Listing.findById(newListing._id).populate(
-      "category"
-    );
-    return newerListing;
+    if (user?.isAdmin) {
+      const listing = await Listing.create({
+        ...listingInput,
+        createdBy: user.id,
+      });
+      return listing;
+    } else if (!user?.isAdmin) {
+      console.log(
+        "[ERROR]: Failed to create listing | Only admins can perform this operation"
+      );
+      throw new ApolloError("Failed to create listing");
+    } else {
+      console.log("[ERROR]: Failed to create listing | User not logged in");
+      throw new ApolloError("Failed to create listing");
+    }
   } catch (error) {
-    console.log(`[ERROR]: Failed to create Listing || ${error.message}`);
+    console.log(`[ERROR]: Failed to create listing | ${error.message}`);
+    throw new ApolloError("Failed to create listing");
   }
 };
 

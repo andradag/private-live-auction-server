@@ -6,6 +6,7 @@ const typeDefs = gql`
     username: String!
     firstName: String!
     lastName: String!
+    imageUrl: String!
     email: String!
     isAdmin: Boolean!
     savedListings: [Listing]
@@ -19,6 +20,7 @@ const typeDefs = gql`
     reserveAmount: Float!
     startingBid: Float!
     status: String!
+    currentBid: Bid
     bids: [Bid]
   }
 
@@ -35,6 +37,7 @@ const typeDefs = gql`
   type Bid {
     amount: Float!
     user: User!
+    listingId: ID!
   }
 
   type Query {
@@ -48,6 +51,7 @@ const typeDefs = gql`
     username: String!
     firstName: String!
     lastName: String!
+    imageUrl: String
     email: String!
     password: String!
   }
@@ -63,7 +67,6 @@ const typeDefs = gql`
     category: String!
     reserveAmount: Float!
     startingBid: Float!
-    createdBy: ID
   }
 
   input AddBidInput {
@@ -77,6 +80,7 @@ const typeDefs = gql`
     addListing(listingInput: ListingInput!): Listing
     saveAListing(input: ID!): User
     addBid(input: AddBidInput!): Bid!
+    deleteListing(input: ID!): String
   }
 
   type Subscription {
