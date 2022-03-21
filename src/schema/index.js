@@ -80,6 +80,7 @@ const typeDefs = gql`
     addListing(listingInput: ListingInput!): Listing
     saveAListing(input: ID!): User
     addBid(input: AddBidInput!): Bid!
+    deleteListing(input: ID!): String
   }
 
   type Subscription {
