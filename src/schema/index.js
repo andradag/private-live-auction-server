@@ -16,10 +16,18 @@ const typeDefs = gql`
     _id: ID!
     title: String!
     description: String!
-    category: Category!
+    propertyType: String!
     reserveAmount: Float!
     startingBid: Float!
     status: String!
+    bedrooms: Int!
+    bathrooms: Int!
+    createdBy: User!
+    createdAt: String!
+    updatedAt: String!
+    googleMapUrl: String
+    keyFeatures: [String]
+    images: [String]
     currentBid: Bid
     bids: [Bid]
   }
@@ -64,9 +72,14 @@ const typeDefs = gql`
   input ListingInput {
     title: String!
     description: String!
-    category: String!
+    propertyType: String!
     reserveAmount: Float!
     startingBid: Float!
+    bedrooms: Int!
+    bathrooms: Int!
+    googleMapUrl: String
+    keyFeatures: [String]
+    images: [String]
   }
 
   input AddBidInput {
@@ -77,7 +90,7 @@ const typeDefs = gql`
   type Mutation {
     addUser(userInput: UserInput!): Auth
     login(input: LoginInput!): Auth
-    addListing(listingInput: ListingInput!): Listing
+    addListing(input: ListingInput!): Listing
     saveAListing(input: ID!): User
     addBid(input: AddBidInput!): Bid!
     deleteListing(input: ID!): String
