@@ -307,5 +307,104 @@
     "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
     "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
     "__v": 0
+  },
+  {
+    "title": "Villa Jako",
+    "propertyType": "House",
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "description": "the three-bedroom hilltop house was built for a shipping magnate in the Twenties to resemble a Roman villa, complete with a grand facade and, of course, multiple columns",
+    "reserveAmount": 50000000,
+    "startingBid": 11000000,
+    "status": "Upcoming",
+    "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
+    "googleMapUrl": "unknown",
+    "keyFeatures": ["Bats"],
+    "images": [
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/villa-jako-c-engel-voelkers-herbert-ohge-1-1530031876.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/villa-jako-c-engel-voelkers-herbert-ohge-2-1530031882.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/villa-jako-c-engel-voelkers-mark-seelen-1-1530031873.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/villa-jako-c-engel-voelkers-mark-seelen-2-1530031871.jpg?crop=1xw:1xh;centertop&resize=980:*",
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/villa-jako-c-engel-voelkers-mark-seelen-3-1530031870.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/villa-jako-c-engel-voelkers-mark-seelen-4-1530031866.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/villa-jako-c-engel-voelkers-mark-seelen-5-1530031873.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/villa-jako-c-engel-voelkers-mark-seelen-6-1530031875.jpg?crop=1xw:1xh;center,top&resize=980:*"
+    ],
+    "bids": [],
+    "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "__v": 0
+  },
+  {
+    "title": "Left Bank Apartment",
+    "propertyType": "Flat",
+    "bedrooms": 9,
+    "bathrooms": 8,
+    "description": "Amazingly, all were decorated in the eighteenth-century style. This stunning nine room Parisian apartment featured handwoven fabrics from Lyon, Versailles-esque beds, statues and feathers and fringes and crown canopies. In 2000, much was auctioned off in Monaco in to the amount of $21.7 million.",
+    "reserveAmount": 10000000,
+    "startingBid": 300000,
+    "status": "Upcoming",
+    "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
+    "googleMapUrl": "https://goo.gl/maps/D3tyupgGyjz6X9gx6",
+    "keyFeatures": [
+      "handwoven fabrics from Lyon, Versailles-esque beds, statues and feathers and fringes and crown canopies"
+    ],
+    "images": [
+      "https://thisisglamorous.com/wp-content/uploads/2015/09/01-At-Home-With-Karl-Lagereld-Paris-This-Is-Glamorous.jpg, https://thisisglamorous.com/wp-content/uploads/2015/09/02-At-Home-With-Karl-Lagereld-Paris-This-Is-Glamorous.jpg, https://thisisglamorous.com/wp-content/uploads/2015/09/04-At-Home-With-Karl-Lagereld-Paris-This-Is-Glamorous.jpg, https://thisisglamorous.com/wp-content/uploads/2015/09/03-At-Home-With-Karl-Lagereld-Paris-This-Is-Glamorous.jpg, https://thisisglamorous.com/wp-content/uploads/2015/09/05-At-Home-With-Karl-Lagereld-Paris-This-Is-Glamorous.jpg, https://thisisglamorous.com/wp-content/uploads/2015/09/06-At-Home-With-Karl-Lagereld-Paris-This-Is-Glamorous.jpg, https://thisisglamorous.com/wp-content/uploads/2015/09/06-At-Home-With-Karl-Lagereld-Paris-This-Is-Glamorous.jpg, https://thisisglamorous.com/wp-content/uploads/2015/09/07-At-Home-With-Karl-Lagereld-Paris-This-Is-Glamorous.jpg"
+    ],
+    "bids": [],
+    "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "__v": 0
+  },
+  {
+    "title": "Quai Voltaire apartment",
+    "propertyType": "flat",
+    "bedrooms": 7,
+    "bathrooms": 6,
+    "description": "When you enter the apartment, which is just six-minutes walk from Louvre, visible from the front room windows, you can see the door of a silver Whirlpool fridge freezer which is decorated with a handful of glittery gel stickers. Tonally out of sync with the rest of the space – largely characterised by more serious-looking furniture and a palette that skews monochrome – the appearance of Pikachu, Squirtle and other Pokémon is a charming reminder that the late designer once told a journalist that the last thing he wanted to be was a serious person. Elsewhere in the apartment, which Lagerfeld spent two and a half years renovating before moving in in 2007, clusters of unopened pink and white Coca-Cola Light bottles from a 2010 collaboration, emblazoned with Lagerfeld's iconic silhouette, claim several surfaces while in his bedroom, half a dozen sixth generation iPod Nanos perch on a bedside table (he famously owned upwards of 40).",
+    "reserveAmount": 12000000,
+    "startingBid": 24000000,
+    "status": "Upcoming",
+    "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
+    "googleMapUrl": "https://goo.gl/maps/ciuym5AEU7GTz5tt9",
+    "keyFeatures": [
+      "Louvre view, cloud-like sofa by British architect Amanda Levete",
+      "tables by French designer Martin Szekely",
+      "angular glass chairs and a matching coffee table by German designer Konstantin Grcic",
+      "Marzio Cecchi's curved metal table",
+      "Maria Pergay's round cocktail table"
+    ],
+    "images": [
+      "https://media.vogue.co.uk/photos/61a78f2f4dd7cc4584f7d7a0/master/w_1600,c_limit/0260PF2177_Annunzio_QuaiVoltaire_23.jpg, https://media.vogue.co.uk/photos/61a78f302c4e8cffa9578039/master/w_1600,c_limit/0274PF2177_Annunzio_QuaiVoltaire_37.jpg, https://media.vogue.co.uk/photos/61a78f2c2c4e8cffa9578037/master/w_1600,c_limit/0239PF2177_Annunzio_QuaiVoltaire_02.jpg",
+      "https://media.vogue.co.uk/photos/61a78f2d4dd7cc4584f7d79c/master/w_1600,c_limit/0249PF2177_Annunzio_QuaiVoltaire_12.jpg",
+      "https://media.vogue.co.uk/photos/61a78f2dcfac31880007b3b4/master/w_1600,c_limit/0250PF2177_Annunzio_QuaiVoltaire_13.jpg",
+      "https://media.vogue.co.uk/photos/61a78f304dd7cc4584f7d7a4/master/w_1600,c_limit/0264PF2177_Annunzio_QuaiVoltaire_27.jpg",
+      "https://media.vogue.co.uk/photos/61a78f2bcfac31880007b3b0/master/w_1600,c_limit/0240PF2177_Annunzio_QuaiVoltaire_03.jpg"
+    ],
+    "bids": [],
+    "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "__v": 0
+  },
+  {
+    "title": "Beechwood House",
+    "propertyType": "House",
+    "bedrooms": 37,
+    "bathrooms": 35,
+    "description": "Beechwood House is a Grade II listed large detached house set in 11 acres of grounds on Hampstead Lane in Highgate, North West London, N6. It was built in 1840 in the grounds of the former Fitzroy House by the architect and developer George Basevi for his brother Nathaniel, a barrister.",
+    "reserveAmount": 25000000,
+    "startingBid": 30000000,
+    "status": "Upcoming",
+    "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
+    "googleMapUrl": "https://goo.gl/maps/jfrfqTNX8LWvYRh96",
+    "keyFeatures": ["Bats"],
+    "images": [
+      "https://c2.vgtstatic.com/thumbll/1/6/163925-v2-xl/alisher-usmanovs-house.jpg, https://imageio.forbes.com/specials-images/imageserve/62225784254bf63f63dcafb7/Beechwood-House-in-London-/0x0.jpg?fit=bounds&format=jpg&width=960, https://loveincorporated.blob.core.windows.net/contentimages/gallery/0770b9e6-703d-4114-bf6a-4f39a2031bf1-40russian-billlionaire-home.jpg, https://media.guestofaguest.com/t_article_content/gofg-media/2017/03/1/48648/246becef00000578-2897053-image-a-50_1420452876575.jpg, "
+    ],
+    "bids": [],
+    "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "__v": 0
   }
 ]
