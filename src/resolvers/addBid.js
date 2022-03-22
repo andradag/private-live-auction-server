@@ -4,27 +4,29 @@ const pubsub = require("./pubSub");
 const addBid = async (_, {input}, {user}) => {
 	try {
 		if (user) {
-      await Listing.findByIdAndUpdate(input.listingId, {
-        $push: {
-          bids: {
-            amount: input.amount,
-            user: user.id,
-          },
-        },
-      });
+			await Listing.findByIdAndUpdate(input.listingId, {
+				$push: {
+					bids: {
+						amount: input.amount,
+						user: user.id,
+						bidTime: input.bidTime,
+					},
+				},
+			});
 
-      const bid = {
-        amount: input.amount,
-        user,
-        listingId: input.listingId,
-      };
+			const bid = {
+				amount: input.amount,
+				user,
+				listingId: input.listingId,
+				bidTime: input.bidTime,
+			};
 
-      pubsub.publish("AUCTION_BID", {
-        auctionBid: bid,
-      });
+			pubsub.publish("AUCTION_BID", {
+				auctionBid: bid,
+			});
 
-      return bid;
-    }
+			return bid;
+		}
 	} catch (error) {
 		console.log(`[ERROR]: Failed to add bid | ${error.message}`);
 	}
