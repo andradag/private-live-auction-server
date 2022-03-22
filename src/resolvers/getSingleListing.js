@@ -3,7 +3,9 @@ const { Listing } = require("../models");
 
 const getSingleListing = async (_, { _id }, context) => {
   try {
-    const singleListing = await Listing.findById(_id).populate("bids.user");
+    const singleListing = await Listing.findById(_id)
+      .populate("bids.user")
+      .populate("createdBy");
 
     // console.log(singleListing);
     return singleListing;
