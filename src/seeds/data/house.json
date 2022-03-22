@@ -1,125 +1,158 @@
 [
-{
-  "_id": { "$oid": "6239a5e8214bc88cb400dcbd" },
-  "title": "Bat Cave",
-  "propertyType": "Cave",
-  "bedrooms": 3,
-  "bathrooms": 8,
-  "description": "bat cave",
-  "reserveAmount": 123,
-  "startingBid": 12,
-  "status": "Upcoming",
-  "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
-  "googleMapUrl": "unknown",
-  "keyFeatures": ["Bats"],
-  "images": ["nope"],
-  "bids": [],
-  "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
-  "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
-  "__v": 0
-},
-{
-    "_id": { "$oid": "6239a5e8214bc88cb400dcbd" },
+  {
+    "title": "Bat Cave",
+    "propertyType": "Cave",
+    "bedrooms": 3,
+    "bathrooms": 8,
+    "description": "The Batcave is a subterranean location appearing in American comic books published by DC Comics. It is the headquarters of the superhero Batman, whose secret identity is Bruce Wayne and his partners, consisting of caves beneath his personal residence, Wayne Manor.",
+    "reserveAmount": 123456,
+    "startingBid": 666,
+    "status": "Live",
+    "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
+    "googleMapUrl": "unknown",
+    "keyFeatures": [
+      "Bats",
+      "Many Gadgets",
+      "Parking for Car, Boat, Plane & Rocket",
+      "Big Computers"
+    ],
+    "images": [
+      "https://whyy.org/wp-content/uploads/2018/06/crevices.jpg",
+      "https://upload.wikimedia.org/wikipedia/en/3/37/Batcave-Batman1.png",
+      "data:image/jpeg;base64,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",
+      "https://i.pinimg.com/originals/b7/37/db/b737db486d603a50869305416f48d17f.jpg",
+      "https://static.wikia.nocookie.net/batman/images/3/31/ReturnsCave.jpg/revision/latest?cb=20101112050645"
+    ],
+    "bids": [],
+    "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "__v": 0
+  },
+  {
     "title": "Upper Grosvenor Street",
     "propertyType": "Town House",
     "bedrooms": 12,
     "bathrooms": 12,
-    "description": "An exceptional example of one of Mayfair's original Mansions, this Grade II listed townhouse was constructed in 1732 and extensively refurbished in 1908 by famed British Architect Ralph Knott. Today the house has been restored to its former glory, respectful of its history but very much with modern qualities.
-    Spanning over 14,500 sq ft and with grand proportions throughout including an 'L-shaped' drawing room on the first floor leading to a large terrace and a dining room on the ground floor with seating for twenty guests, the house is ideally configured for both formal entertaining and comfortable family living.
-    
-    The centrepiece of the house is the family kitchen, unusually positioned on the ground floor (supported by a 'dirty kitchen' on the lower ground floor), where families can meet and congregate. As well as the formal rooms, the main house has five principle bedroom suites including the master bedroom which occupies the entire second floor and has its own private and secluded roof terrace. Further bedrooms are found in the generously proportioned 'Mews House' to the rear in Culross Street which has its own drawing room/kitchen as well as a well-appointed gym and garaged parking for two cars.
-    
-    The main house has an enviable spa with one of Mayfair's largest private swimming pools, a gym/fitness studio, separate spa pool, sauna and for post work-out relaxation a private screening room.",
+    "description": "An exceptional example of one of Mayfair's original Mansions, this Grade II listed townhouse was constructed in 1732 and extensively refurbished in 1908 by famed British Architect Ralph Knott. Today the house has been restored to its former glory, respectful of its history but very much with modern qualities",
     "reserveAmount": 50000000,
     "startingBid": 20000000,
     "status": "Live",
     "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
     "googleMapUrl": "https://goo.gl/maps/R9pXyTMzggEcEBkt8",
-    "keyFeatures": ["Grade II Listed Townhouse", "One of Mayfair;s Original Mansions", "Master Suite with Private terrace", "73' Swimming Pool", "Spa with Sauna", "55' Roof Terrace", "Screening Room"],
-    "images": ["https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_00_0000.JPG", "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_01_0000.jpg", "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_03_0000.jpg", "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_05_0000.jpg", "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_09_0000.jpg", "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_13_0000.jpg", "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_15_0000.jpg"],
+    "keyFeatures": [
+      "Grade II Listed Townhouse",
+      "One of Mayfair;s Original Mansions",
+      "Master Suite with Private terrace",
+      "73' Swimming Pool",
+      "Spa with Sauna",
+      "55' Roof Terrace",
+      "Screening Room"
+    ],
+    "images": [
+      "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_00_0000.JPG",
+      "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_01_0000.jpg",
+      "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_03_0000.jpg",
+      "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_05_0000.jpg",
+      "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_09_0000.jpg",
+      "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_13_0000.jpg",
+      "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_15_0000.jpg"
+    ],
     "bids": [],
     "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
     "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
     "__v": 0
-},
+  },
   {
-    "_id": { "$oid": "6239a5e8214bc88cb400dcbd" },
     "title": "Merton Lane",
     "propertyType": "Detached",
     "bedrooms": 10,
     "bathrooms": 12,
-    "description": "Located on a sought after road and occupying a 2 acre site, a bespoke family home with the accommodation predominantly arranged over three floors with the benefit of a substantial, self-contained staff lodge.
-
-    The luxurious entrance hall of this stunning home, has a glass lift to each floor.
-    
-    From the impressive entrance hall, there is the formal sitting and dining room that overlooks the magnificent grounds, that opens onto the breakfast room and in turn opens onto the kitchen.
-    
-    On the first floor there is the master suite with bathroom, four further suites each with en suite bathrooms whilst to the top floor there is a magnificent home office with panoramic views over the gardens and Hampstead Heath beyond.
-    
-    The leisure facilities have been thoughtfully designed and the swimming pool opens on to the garden whilst there are full spa facilities behind.
-    
-    There is also a home gymnasium and billiards room.
-    
-    The staff lodge extends to approx. 4,400sqft and there is garaging below for approx. 4 cars as well as ample off street parking to the front of the house.
-    
-    The landscaped gardens are in excess of two acres and the gardens offer a serene oasis within this sought after location with the additional benefit of a tennis court
-    
-    Owing to our commitment to keep both our colleagues and clients safe during this period of recommended isolation, we have many self-serve viewing options available to you. These include video walkthroughs, 360 virtual reality viewings and enhanced comprehensive photography.",
+    "description": "Located on a sought after road and occupying a 2 acre site, a bespoke family home with the accommodation predominantly arranged over three floors with the benefit of a substantial, self-contained staff lodge.",
     "reserveAmount": 123000,
     "startingBid": 1200000,
     "status": "Upcoming",
     "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
     "googleMapUrl": "https://goo.gl/maps/Hy8maaRmSW9ErLaeA",
-    "keyFeatures": ["10 bedrooms", "5 reception rooms", "Leisure Facilities", "Outbuildings", "Garden", "New Build"],
-    "images": ["https://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_02_0001.jpg", "https://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_01_0001.jpghttps://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_05_0001.jpg", "https://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_05_0001.jpg", "https://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_07_0001.jpg", "https://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_11_0001.jpg", "https://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_20_0001.jpg"],
+    "keyFeatures": [
+      "10 bedrooms",
+      "5 reception rooms",
+      "Leisure Facilities",
+      "Outbuildings",
+      "Garden",
+      "New Build"
+    ],
+    "images": [
+      "https://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_02_0001.jpg",
+      "https://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_01_0001.jpghttps://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_05_0001.jpg",
+      "https://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_05_0001.jpg",
+      "https://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_07_0001.jpg",
+      "https://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_11_0001.jpg",
+      "https://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_20_0001.jpg"
+    ],
     "bids": [],
     "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
     "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
     "__v": 0
   },
   {
-    "_id": { "$oid": "6239a5e8214bc88cb400dcbd" },
     "title": "Avenue Road",
     "propertyType": "Detached",
     "bedrooms": 8,
     "bathrooms": 3,
-    "description": "A very rare Freehold mansion, nestled in a double-width garden, available for sale for the first time in 60 years. We are privileged to introduce this unique property, which offers the fortunate buyer a rare combination of privacy and grand living, in one of London's most sophisticated leafy villages. This remarkable, freehold neo-Georgian mansion is in a delightful and convenient position on the corner of Radlett Place and Avenue Road, opposite the junction of Acacia Road and makes an impressive statement in the road.
-    
-    The sense of grandeur becomes apparent when considering the dimensions, which are approximately twice the width of most other properties in the road (Width: 128ft/38.8m and Depth: 139 ft/42.3m). While the site covers a total area of 0.41 acres (0.17 hectares), with Radlett Place on one side, it is therefore a substantial distance from its neighbours.",
+    "description": "A very rare Freehold mansion, nestled in a double-width garden, available for sale for the first time in 60 years. We are privileged to introduce this unique property, which offers the fortunate buyer a rare combination of privacy and grand living, in one of London's most sophisticated leafy villages. This remarkable, freehold neo-Georgian mansion is in a delightful and convenient position on the corner of Radlett Place and Avenue Road, opposite the junction of Acacia Road and makes an impressive statement in the road.",
     "reserveAmount": 12000000,
     "startingBid": 10000000,
     "status": "Upcoming",
     "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
     "googleMapUrl": "https://goo.gl/maps/xacUeqK4YthopY5H8",
-    "keyFeatures": ["Generous Gardens", "Planning in place for Luxury Mansion", "Double Garage", "Carriage Driveway"],
-    "images": ["https://media.rightmove.co.uk/191k/190037/67945350/190037_28618841_IMG_01_0000.jpg", "https://media.rightmove.co.uk/191k/190037/67945350/190037_28618841_IMG_02_0000.jpg", "https://media.rightmove.co.uk/191k/190037/67945350/190037_28618841_IMG_04_0000.jpg", "https://media.rightmove.co.uk/191k/190037/67945350/190037_28618841_IMG_07_0000.jpg", "https://media.rightmove.co.uk/191k/190037/67945350/190037_28618841_IMG_09_0000.jpg"],
+    "keyFeatures": [
+      "Generous Gardens",
+      "Planning in place for Luxury Mansion",
+      "Double Garage",
+      "Carriage Driveway"
+    ],
+    "images": [
+      "https://media.rightmove.co.uk/191k/190037/67945350/190037_28618841_IMG_01_0000.jpg",
+      "https://media.rightmove.co.uk/191k/190037/67945350/190037_28618841_IMG_02_0000.jpg",
+      "https://media.rightmove.co.uk/191k/190037/67945350/190037_28618841_IMG_04_0000.jpg",
+      "https://media.rightmove.co.uk/191k/190037/67945350/190037_28618841_IMG_07_0000.jpg",
+      "https://media.rightmove.co.uk/191k/190037/67945350/190037_28618841_IMG_09_0000.jpg"
+    ],
     "bids": [],
     "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
     "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
     "__v": 0
   },
   {
-    "_id": { "$oid": "6239a5e8214bc88cb400dcbd" },
     "title": "Suttons Drive",
     "propertyType": "Land",
     "bedrooms": 0,
     "bathrooms": 0,
-    "description": "A rare opportunity to purchase a Grade II listed hall (now in ruins), together with c153.8 acres/c62.2 ha parkland and two lakes, having potential for some form of residential development (on parts) or other uses (STPP).
-    ",
+    "description": "A rare opportunity to purchase a Grade II listed hall (now in ruins), together with c153.8 acres/c62.2 ha parkland and two lakes, having potential for some form of residential development (on parts) or other uses (STPP).",
     "reserveAmount": 6000000,
     "startingBid": 5500500,
     "status": "Live",
     "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
     "googleMapUrl": "https://goo.gl/maps/V5vzNT4pRnx5mBqZ6",
-    "keyFeatures": ["RARE Opportunity", "Grade II listed ruins", "153 Acres", "Subject to planning approval"],
-    "images": ["https://media.rightmove.co.uk/6k/5570/75111822/5570_224553S_IMG_01_0000.jpg", "https://media.rightmove.co.uk/6k/5570/75111822/5570_224553S_IMG_02_0000.jpg", "https://media.rightmove.co.uk/6k/5570/75111822/5570_224553S_IMG_04_0000.jpg", "https://media.rightmove.co.uk/6k/5570/75111822/5570_224553S_IMG_08_0000.jpg", "https://media.rightmove.co.uk/6k/5570/75111822/5570_224553S_IMG_05_0000.jpg"],
+    "keyFeatures": [
+      "RARE Opportunity",
+      "Grade II listed ruins",
+      "153 Acres",
+      "Subject to planning approval"
+    ],
+    "images": [
+      "https://media.rightmove.co.uk/6k/5570/75111822/5570_224553S_IMG_01_0000.jpg",
+      "https://media.rightmove.co.uk/6k/5570/75111822/5570_224553S_IMG_02_0000.jpg",
+      "https://media.rightmove.co.uk/6k/5570/75111822/5570_224553S_IMG_04_0000.jpg",
+      "https://media.rightmove.co.uk/6k/5570/75111822/5570_224553S_IMG_08_0000.jpg",
+      "https://media.rightmove.co.uk/6k/5570/75111822/5570_224553S_IMG_05_0000.jpg"
+    ],
     "bids": [],
     "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
     "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
     "__v": 0
   },
   {
-    "_id": { "$oid": "6239a5e8214bc88cb400dcbd" },
     "title": "Harborne Road",
     "propertyType": "Detached",
     "bedrooms": 5,
@@ -131,14 +164,20 @@
     "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
     "googleMapUrl": "https://goo.gl/maps/VrJXuaTvWFsrajMz8",
     "keyFeatures": [""],
-    "images": ["https://media.rightmove.co.uk/18k/17688/113062529/17688_101367008127_IMG_00_0000.jpeg", "https://media.rightmove.co.uk/18k/17688/113062529/17688_101367008127_IMG_01_0000.jpeg", "https://media.rightmove.co.uk/18k/17688/113062529/17688_101367008127_IMG_04_0000.jpeg", "https://media.rightmove.co.uk/18k/17688/113062529/17688_101367008127_IMG_06_0000.jpeg", "https://media.rightmove.co.uk/18k/17688/113062529/17688_101367008127_IMG_14_0000.jpeg", "https://media.rightmove.co.uk/18k/17688/113062529/17688_101367008127_IMG_17_0000.jpeg"],
+    "images": [
+      "https://media.rightmove.co.uk/18k/17688/113062529/17688_101367008127_IMG_00_0000.jpeg",
+      "https://media.rightmove.co.uk/18k/17688/113062529/17688_101367008127_IMG_01_0000.jpeg",
+      "https://media.rightmove.co.uk/18k/17688/113062529/17688_101367008127_IMG_04_0000.jpeg",
+      "https://media.rightmove.co.uk/18k/17688/113062529/17688_101367008127_IMG_06_0000.jpeg",
+      "https://media.rightmove.co.uk/18k/17688/113062529/17688_101367008127_IMG_14_0000.jpeg",
+      "https://media.rightmove.co.uk/18k/17688/113062529/17688_101367008127_IMG_17_0000.jpeg"
+    ],
     "bids": [],
     "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
     "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
     "__v": 0
   },
   {
-    "_id": { "$oid": "6239a5e8214bc88cb400dcbd" },
     "title": "Salisbury Road",
     "propertyType": "Detached",
     "bedrooms": 7,
@@ -149,15 +188,27 @@
     "status": "Upcoming",
     "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
     "googleMapUrl": "https://goo.gl/maps/uuwWMnTKdM6pDK4Z8",
-    "keyFeatures": ["VICTORIAN HOME", "SEVEN BEDROOMS", "MANY CHARACTER FEATURES RETAINED", "AMPLE OFF ROAD PARKING AND GARAGE", "MATURE GARDENS WITH DETACHED GARDEN ROOM"],
-    "images": ["https://media.rightmove.co.uk/37k/36548/120909956/36548_MOS220042_IMG_00_0000.jpeg", "https://media.rightmove.co.uk/37k/36548/120909956/36548_MOS220042_IMG_02_0000.jpeg", "https://media.rightmove.co.uk/37k/36548/120909956/36548_MOS220042_IMG_04_0000.jpeg", "https://media.rightmove.co.uk/37k/36548/120909956/36548_MOS220042_IMG_06_0000.jpeg", "https://media.rightmove.co.uk/37k/36548/120909956/36548_MOS220042_IMG_09_0000.jpeg", "https://media.rightmove.co.uk/37k/36548/120909956/36548_MOS220042_IMG_11_0000.jpeg"],
+    "keyFeatures": [
+      "VICTORIAN HOME",
+      "SEVEN BEDROOMS",
+      "MANY CHARACTER FEATURES RETAINED",
+      "AMPLE OFF ROAD PARKING AND GARAGE",
+      "MATURE GARDENS WITH DETACHED GARDEN ROOM"
+    ],
+    "images": [
+      "https://media.rightmove.co.uk/37k/36548/120909956/36548_MOS220042_IMG_00_0000.jpeg",
+      "https://media.rightmove.co.uk/37k/36548/120909956/36548_MOS220042_IMG_02_0000.jpeg",
+      "https://media.rightmove.co.uk/37k/36548/120909956/36548_MOS220042_IMG_04_0000.jpeg",
+      "https://media.rightmove.co.uk/37k/36548/120909956/36548_MOS220042_IMG_06_0000.jpeg",
+      "https://media.rightmove.co.uk/37k/36548/120909956/36548_MOS220042_IMG_09_0000.jpeg",
+      "https://media.rightmove.co.uk/37k/36548/120909956/36548_MOS220042_IMG_11_0000.jpeg"
+    ],
     "bids": [],
     "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
     "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
     "__v": 0
   },
   {
-    "_id": { "$oid": "6239a5e8214bc88cb400dcbd" },
     "title": "Quarry Street",
     "propertyType": "Detached",
     "bedrooms": 9,
@@ -168,11 +219,93 @@
     "status": "Upcoming",
     "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
     "googleMapUrl": "unknown",
-    "keyFeatures": ["Leisure Suite with Pool", "Bespoke fitted kitchen", "Master Bedroom Suite with Annex En Suite & Dressing Room", "Perfectly located"],
-    "images": ["https://media.rightmove.co.uk/96k/95516/115513421/95516_11197773_IMG_00_0000.jpeg", "https://media.rightmove.co.uk/96k/95516/115513421/95516_11197773_IMG_01_0000.jpeg", "https://media.rightmove.co.uk/96k/95516/115513421/95516_11197773_IMG_02_0000.jpeg", "https://media.rightmove.co.uk/96k/95516/115513421/95516_11197773_IMG_04_0000.jpeg", "https://media.rightmove.co.uk/96k/95516/115513421/95516_11197773_IMG_08_0000.jpeg", "https://media.rightmove.co.uk/96k/95516/115513421/95516_11197773_IMG_12_0000.jpeg", "https://media.rightmove.co.uk/96k/95516/115513421/95516_11197773_IMG_33_0000.jpeg"],
+    "keyFeatures": [
+      "Leisure Suite with Pool",
+      "Bespoke fitted kitchen",
+      "Master Bedroom Suite with Annex En Suite & Dressing Room",
+      "Perfectly located"
+    ],
+    "images": [
+      "https://media.rightmove.co.uk/96k/95516/115513421/95516_11197773_IMG_00_0000.jpeg",
+      "https://media.rightmove.co.uk/96k/95516/115513421/95516_11197773_IMG_01_0000.jpeg",
+      "https://media.rightmove.co.uk/96k/95516/115513421/95516_11197773_IMG_02_0000.jpeg",
+      "https://media.rightmove.co.uk/96k/95516/115513421/95516_11197773_IMG_04_0000.jpeg",
+      "https://media.rightmove.co.uk/96k/95516/115513421/95516_11197773_IMG_08_0000.jpeg",
+      "https://media.rightmove.co.uk/96k/95516/115513421/95516_11197773_IMG_12_0000.jpeg",
+      "https://media.rightmove.co.uk/96k/95516/115513421/95516_11197773_IMG_33_0000.jpeg"
+    ],
     "bids": [],
     "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
     "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
     "__v": 0
   },
+  {
+    "title": "Beetham Tower",
+    "propertyType": "Apartment",
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "description": "Long a staple of Manchester City Centre skyline, Beetham Tower has continuously been recognised as one of Manchester's most iconic developments.",
+    "reserveAmount": 2750000,
+    "startingBid": 2000000,
+    "status": "Upcoming",
+    "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
+    "googleMapUrl": "https://goo.gl/maps/VksZYEjtMFtPLwsLA",
+    "keyFeatures": [
+      "Triplex Apartment Four Double Bedrooms",
+      "Five Secure Parking Spaces",
+      "Private Terrace",
+      "Unrivalled Panoramic Views",
+      "EPC Rating = B"
+    ],
+    "images": [
+      "https://media.rightmove.co.uk/202k/201614/72130140/201614_MNS200002_IMG_00_0000.jpeg",
+      "https://media.rightmove.co.uk/202k/201614/72130140/201614_MNS200002_IMG_01_0001.jpeg",
+      "https://media.rightmove.co.uk/202k/201614/72130140/201614_MNS200002_IMG_03_0001.jpeg",
+      "https://media.rightmove.co.uk/202k/201614/72130140/201614_MNS200002_IMG_05_0001.jpeg",
+      "https://media.rightmove.co.uk/202k/201614/72130140/201614_MNS200002_IMG_07_0001.jpeg",
+      "https://media.rightmove.co.uk/202k/201614/72130140/201614_MNS200002_IMG_10_0001.jpeg",
+      "https://media.rightmove.co.uk/202k/201614/72130140/201614_MNS200002_IMG_14_0001.jpeg",
+      "https://media.rightmove.co.uk/202k/201614/72130140/201614_MNS200002_IMG_20_0001.jpeg"
+    ],
+    "bids": [],
+    "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "__v": 0
+  },
+  {
+    "title": "Stafford Road",
+    "propertyType": "Detached",
+    "bedrooms": 5,
+    "bathrooms": 6,
+    "description": "Hunters Worsley are delighted to introduce to the market an individually designed and totally rebuilt five bedroom detached house which was one of the four lodges to the originally estate of the ever popular location of Ellesmere Park. The property has been built and fitted using the very best of materials and integrated technology. There is thermostatically controlled under floor heating throughout, ethernet cabling throughout with individual surround sound to all principal rooms and there is a sophisticated security system which includes internet surveillance. There is also lighting which has been hand made and telephone internet in all rooms of the house. The property has the added advantage of a self contained apartment over the garage block.",
+    "reserveAmount": 1750000,
+    "startingBid": 1200000,
+    "status": "Upcoming",
+    "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
+    "googleMapUrl": "https://goo.gl/maps/c2ZYZBVKAwn1VayV7",
+    "keyFeatures": [
+      "5 BEDROOM DETACHED HOUSE",
+      "INDIVIDUALLY DESIGNED & TOTALLY REBUILT",
+      "HIGHLY SORT AFTER LOCATION",
+      "CONSERVTORY",
+      "FAMILY ROOM",
+      "MASTER BED WITH ENSUITE",
+      "FAMILY BATHROOM"
+    ],
+    "images": [
+      "https://media.rightmove.co.uk/21k/20075/119550911/20075_Zhuntersworsley0000024158_IMG_00_0000.jpeg",
+      "https://media.rightmove.co.uk/21k/20075/119550911/20075_Zhuntersworsley0000024158_IMG_01_0000.jpeg",
+      "https://media.rightmove.co.uk/21k/20075/119550911/20075_Zhuntersworsley0000024158_IMG_02_0000.jpeg",
+      "https://media.rightmove.co.uk/21k/20075/119550911/20075_Zhuntersworsley0000024158_IMG_04_0000.jpeg",
+      "https://media.rightmove.co.uk/21k/20075/119550911/20075_Zhuntersworsley0000024158_IMG_06_0000.jpeg",
+      "https://media.rightmove.co.uk/21k/20075/119550911/20075_Zhuntersworsley0000024158_IMG_08_0000.jpeg",
+      "https://media.rightmove.co.uk/21k/20075/119550911/20075_Zhuntersworsley0000024158_IMG_10_0000.jpeg",
+      "https://media.rightmove.co.uk/21k/20075/119550911/20075_Zhuntersworsley0000024158_IMG_15_0000.jpeg",
+      "https://media.rightmove.co.uk/21k/20075/119550911/20075_Zhuntersworsley0000024158_IMG_18_0000.jpeg"
+    ],
+    "bids": [],
+    "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "__v": 0
+  }
 ]
