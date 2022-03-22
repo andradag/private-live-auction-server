@@ -1,0 +1,124 @@
+[
+{
+  "_id": { "$oid": "6239a5e8214bc88cb400dcbd" },
+  "title": "Bat Cave",
+  "propertyType": "Cave",
+  "bedrooms": 3,
+  "bathrooms": 8,
+  "description": "bat cave",
+  "reserveAmount": 123,
+  "startingBid": 12,
+  "status": "Upcoming",
+  "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
+  "googleMapUrl": "unknown",
+  "keyFeatures": ["Bats"],
+  "images": ["nope"],
+  "bids": [],
+  "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
+  "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
+  "__v": 0
+},
+{
+    "_id": { "$oid": "6239a5e8214bc88cb400dcbd" },
+    "title": "Upper Grosvenor Street",
+    "propertyType": "Town House",
+    "bedrooms": 12,
+    "bathrooms": 12,
+    "description": "An exceptional example of one of Mayfair's original Mansions, this Grade II listed townhouse was constructed in 1732 and extensively refurbished in 1908 by famed British Architect Ralph Knott. Today the house has been restored to its former glory, respectful of its history but very much with modern qualities.
+    Spanning over 14,500 sq ft and with grand proportions throughout including an 'L-shaped' drawing room on the first floor leading to a large terrace and a dining room on the ground floor with seating for twenty guests, the house is ideally configured for both formal entertaining and comfortable family living.
+    
+    The centrepiece of the house is the family kitchen, unusually positioned on the ground floor (supported by a 'dirty kitchen' on the lower ground floor), where families can meet and congregate. As well as the formal rooms, the main house has five principle bedroom suites including the master bedroom which occupies the entire second floor and has its own private and secluded roof terrace. Further bedrooms are found in the generously proportioned 'Mews House' to the rear in Culross Street which has its own drawing room/kitchen as well as a well-appointed gym and garaged parking for two cars.
+    
+    The main house has an enviable spa with one of Mayfair's largest private swimming pools, a gym/fitness studio, separate spa pool, sauna and for post work-out relaxation a private screening room.",
+    "reserveAmount": 50000000,
+    "startingBid": 20000000,
+    "status": "Live",
+    "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
+    "googleMapUrl": "https://goo.gl/maps/R9pXyTMzggEcEBkt8",
+    "keyFeatures": ["Grade II Listed Townhouse", "One of Mayfair;s Original Mansions", "Master Suite with Private terrace", "73' Swimming Pool", "Spa with Sauna", "55' Roof Terrace", "Screening Room"],
+    "images": ["https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_00_0000.JPG", "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_01_0000.jpg", "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_03_0000.jpg", "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_05_0000.jpg", "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_09_0000.jpg", "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_13_0000.jpg", "https://media.rightmove.co.uk/222k/221522/97872269/221522_21UGS_IMG_15_0000.jpg"],
+    "bids": [],
+    "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "__v": 0
+},
+  {
+    "_id": { "$oid": "6239a5e8214bc88cb400dcbd" },
+    "title": "Merton Lane",
+    "propertyType": "Detached",
+    "bedrooms": 10,
+    "bathrooms": 12,
+    "description": "Located on a sought after road and occupying a 2 acre site, a bespoke family home with the accommodation predominantly arranged over three floors with the benefit of a substantial, self-contained staff lodge.
+
+    The luxurious entrance hall of this stunning home, has a glass lift to each floor.
+    
+    From the impressive entrance hall, there is the formal sitting and dining room that overlooks the magnificent grounds, that opens onto the breakfast room and in turn opens onto the kitchen.
+    
+    On the first floor there is the master suite with bathroom, four further suites each with en suite bathrooms whilst to the top floor there is a magnificent home office with panoramic views over the gardens and Hampstead Heath beyond.
+    
+    The leisure facilities have been thoughtfully designed and the swimming pool opens on to the garden whilst there are full spa facilities behind.
+    
+    There is also a home gymnasium and billiards room.
+    
+    The staff lodge extends to approx. 4,400sqft and there is garaging below for approx. 4 cars as well as ample off street parking to the front of the house.
+    
+    The landscaped gardens are in excess of two acres and the gardens offer a serene oasis within this sought after location with the additional benefit of a tennis court
+    
+    Owing to our commitment to keep both our colleagues and clients safe during this period of recommended isolation, we have many self-serve viewing options available to you. These include video walkthroughs, 360 virtual reality viewings and enhanced comprehensive photography.",
+    "reserveAmount": 123000,
+    "startingBid": 1200000,
+    "status": "Upcoming",
+    "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
+    "googleMapUrl": "https://goo.gl/maps/Hy8maaRmSW9ErLaeA",
+    "keyFeatures": ["10 bedrooms", "5 reception rooms", "Leisure Facilities", "Outbuildings", "Garden", "New Build"],
+    "images": ["https://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_02_0001.jpg", "https://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_01_0001.jpghttps://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_05_0001.jpg", "https://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_05_0001.jpg", "https://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_07_0001.jpg", "https://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_11_0001.jpg", "https://media.rightmove.co.uk/66k/65806/79055890/65806_HAM130309_IMG_20_0001.jpg"],
+    "bids": [],
+    "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "6239a5e8214bc88cb400dcbd" },
+    "title": "Avenue Road",
+    "propertyType": "Detached",
+    "bedrooms": 8,
+    "bathrooms": 3,
+    "description": "'A very rare Freehold mansion, nestled in a double-width garden, available for sale for the first time in 60 years.'
+
+    We are privileged to introduce this unique property, which offers the fortunate buyer a rare combination of privacy and grand living, in one of London's most sophisticated leafy villages.
+    
+    This remarkable, freehold neo-Georgian mansion is in a delightful and convenient position on the corner of Radlett Place and Avenue Road, opposite the junction of Acacia Road and makes an impressive statement in the road.
+    
+    The sense of grandeur becomes apparent when considering the dimensions, which are approximately twice the width of most other properties in the road (Width: 128ft/38.8m and Depth: 139 ft/42.3m). While the site covers a total area of 0.41 acres (0.17 hectares), with Radlett Place on one side, it is therefore a substantial distance from its neighbours.",
+    "reserveAmount": 12000000,
+    "startingBid": 10000000,
+    "status": "Upcoming",
+    "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
+    "googleMapUrl": "https://goo.gl/maps/xacUeqK4YthopY5H8",
+    "keyFeatures": ["Generous Gardens", "Planning in place for Luxury Mansion", "Double Garage", "Carriage Driveway"],
+    "images": ["https://media.rightmove.co.uk/191k/190037/67945350/190037_28618841_IMG_01_0000.jpg", "https://media.rightmove.co.uk/191k/190037/67945350/190037_28618841_IMG_02_0000.jpg", "https://media.rightmove.co.uk/191k/190037/67945350/190037_28618841_IMG_04_0000.jpg", "https://media.rightmove.co.uk/191k/190037/67945350/190037_28618841_IMG_07_0000.jpg", "https://media.rightmove.co.uk/191k/190037/67945350/190037_28618841_IMG_09_0000.jpg"],
+    "bids": [],
+    "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "6239a5e8214bc88cb400dcbd" },
+    "title": "Bat Cave",
+    "propertyType": "Cave",
+    "bedrooms": 3,
+    "bathrooms": 8,
+    "description": "bat cave",
+    "reserveAmount": 123,
+    "startingBid": 12,
+    "status": "Upcoming",
+    "createdBy": { "$oid": "6238447bcd2f82fe5086fb81" },
+    "googleMapUrl": "unknown",
+    "keyFeatures": ["Bats"],
+    "images": ["nope"],
+    "bids": [],
+    "createdAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "updatedAt": { "$date": "2022-03-22T10:33:12.397Z" },
+    "__v": 0
+  },
+]
