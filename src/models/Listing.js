@@ -1,25 +1,27 @@
 const {Schema, model} = require("mongoose");
-const Category = require("./Category");
+
+const Bid = require("./Bid");
 
 const listingSchema = new Schema(
 	{
 		title: {
 			type: String,
 			required: true,
-			unique: true,
 		},
-		description: {
+		propertyType: {
 			type: String,
 			required: true,
 		},
-		//   images: [
-		//       {
-		//           type: String,
-		//       }
-		//   ],
-		category: {
-			type: Schema.Types.ObjectId,
-			ref: Category,
+		bedrooms: {
+			type: Number,
+			default: 0,
+		},
+		bathrooms: {
+			type: Number,
+			default: 0,
+		},
+		description: {
+			type: String,
 			required: true,
 		},
 		reserveAmount: {
@@ -41,19 +43,18 @@ const listingSchema = new Schema(
 			ref: "User",
 			required: true,
 		},
-		bids: [
-			{
-				user: {type: Schema.Types.ObjectId, required: true, ref: "User"},
-				amount: {type: Number},
-				bidTime: {type: String},
-			},
-		],
+		googleMapUrl: {type: String},
+		keyFeatures: [{type: String}],
+		images: [{type: String}],
+		bids: [Bid],
 	},
 	{
 		toJSON: {
 			getters: true,
 			virtuals: true,
 		},
+		id: true,
+		timestamps: true,
 	}
 );
 
