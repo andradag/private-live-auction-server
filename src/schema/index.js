@@ -89,6 +89,10 @@ const typeDefs = gql`
 		bidTime: String!
 	}
 
+	input StopListingInput {
+		listingId: ID!
+	}
+
 	type Mutation {
 		addUser(userInput: UserInput!): Auth
 		login(input: LoginInput!): Auth
@@ -96,6 +100,7 @@ const typeDefs = gql`
 		saveAListing(input: ID!): User
 		addBid(input: AddBidInput!): Bid!
 		deleteListing(input: ID!): String
+		stopListing(input: StopListingInput): Listing
 	}
 
 	type Subscription {
