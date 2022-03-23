@@ -4,7 +4,7 @@ const { Listing } = require("../models");
 
 const addListing = async (_, { input }, { user }) => {
   try {
-    if (!user?.isAdmin) {
+    if (user?.isAdmin) {
       const newListing = await Listing.create({
         ...input,
         createdBy: user.id,
