@@ -8,7 +8,7 @@ const getListings = require("./getListings");
 const getSingleListing = require("./getSingleListing");
 const addBid = require("./addBid");
 const deleteListing = require("./deleteListing");
-const stopListing = require("./stopListing");
+const controlListing = require("./controlListing");
 const {withFilter} = require("graphql-subscriptions");
 
 const pubsub = require("./pubSub");
@@ -27,7 +27,7 @@ const resolvers = {
 		saveAListing,
 		addBid,
 		deleteListing,
-		stopListing,
+		controlListing,
 	},
 	Subscription: {
 		auctionBid: {
