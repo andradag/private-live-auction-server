@@ -2,6 +2,7 @@ const { ApolloError } = require("apollo-server-errors");
 const { Listing } = require("../models");
 
 const getListings = async (_, { status }, context) => {
+  console.log(status);
   try {
     let listings = [];
     if (status) {

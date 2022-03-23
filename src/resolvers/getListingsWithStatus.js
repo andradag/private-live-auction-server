@@ -2,6 +2,7 @@ const { ApolloError } = require("apollo-server-errors");
 const { Listing } = require("../models");
 
 const getListingsWithStatus = async (_, status, context) => {
+  console.log(status);
   try {
     const listings = await Listing.find(status);
     if (!listings) {
