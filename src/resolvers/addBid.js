@@ -20,12 +20,12 @@ const addBid = async (_, { input }, { user }) => {
         const bid = {
           amount: input.amount,
           user,
-          listingId: input.listingId,
           bidTime: input.bidTime,
+          // listingId: input.listingId,
         };
 
         pubsub.publish("AUCTION_BID", {
-          auctionBid: { bid, status },
+          auctionBid: { bid, status, listingId: input.listingId },
         });
 
         return { bid, status };
