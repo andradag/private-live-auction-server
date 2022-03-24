@@ -1,4 +1,4 @@
-const { Schema } = require("mongoose");
+const {Schema} = require("mongoose");
 
 const bidSchema = {
   user: {
@@ -10,13 +10,18 @@ const bidSchema = {
     type: Number,
     required: true,
   },
+  bidTime: { type: String },
+  listingId: {
+    type: Schema.Types.ObjectId,
+    required: true,
+  },
 };
 
 const schema = new Schema(bidSchema, {
-  toJSON: {
-    getters: true,
-  },
-  id: true,
+	toJSON: {
+		getters: true,
+	},
+	id: true,
 });
 
 module.exports = schema;

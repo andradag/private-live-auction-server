@@ -8,6 +8,7 @@ const getListings = require("./getListings");
 const getSingleListing = require("./getSingleListing");
 const addBid = require("./addBid");
 const deleteListing = require("./deleteListing");
+const controlListing = require("./controlListing");
 const { withFilter } = require("graphql-subscriptions");
 
 const pubsub = require("./pubSub");
@@ -26,6 +27,7 @@ const resolvers = {
     saveAListing,
     addBid,
     deleteListing,
+    controlListing,
   },
   Subscription: {
     auctionBid: {
@@ -34,6 +36,7 @@ const resolvers = {
         (payload, variables) => {
           // Only push an update if the comment is on
           // console.log(payload);
+          // console.log(variables);
           // the correct repository for this operation
           return payload.auctionBid.listingId === variables.listingId;
         }

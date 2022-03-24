@@ -45,7 +45,13 @@ const typeDefs = gql`
   type Bid {
     amount: Float!
     user: User!
-    listingId: ID!
+    listingId: ID
+    bidTime: String!
+  }
+
+  type AuctionBid {
+    bid: Bid
+    status: String
   }
 
   type Query {
@@ -85,6 +91,12 @@ const typeDefs = gql`
   input AddBidInput {
     amount: Float!
     listingId: ID!
+    bidTime: String!
+  }
+
+  input ControlListingInput {
+    listingId: ID!
+    status: String!
   }
 
   type Mutation {
@@ -92,12 +104,13 @@ const typeDefs = gql`
     login(input: LoginInput!): Auth
     addListing(input: ListingInput!): Listing
     saveAListing(input: ID!): User
-    addBid(input: AddBidInput!): Bid!
+    addBid(input: AddBidInput!): AuctionBid!
     deleteListing(input: ID!): String
+    controlListing(input: ControlListingInput): AuctionBid
   }
 
   type Subscription {
-    auctionBid(listingId: ID!): Bid
+    auctionBid(listingId: ID!): AuctionBid
   }
 `;
 
