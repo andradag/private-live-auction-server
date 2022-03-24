@@ -1,4 +1,4 @@
-const {gql} = require("apollo-server");
+const { gql } = require("apollo-server");
 
 const typeDefs = gql`
   type User {
@@ -49,6 +49,11 @@ const typeDefs = gql`
     bidTime: String!
   }
 
+  type AuctionBid {
+    bid: Bid
+    status: String
+  }
+
   type Query {
     getSingleUser(userId: ID!): User
     getAllCategories: [Category]
@@ -89,17 +94,23 @@ const typeDefs = gql`
     bidTime: String!
   }
 
+  input ControlListingInput {
+    listingId: ID!
+    status: String!
+  }
+
   type Mutation {
     addUser(userInput: UserInput!): Auth
     login(input: LoginInput!): Auth
     addListing(input: ListingInput!): Listing
     saveAListing(input: ID!): User
-    addBid(input: AddBidInput!): Bid!
+    addBid(input: AddBidInput!): AuctionBid!
     deleteListing(input: ID!): String
+    controlListing(input: ControlListingInput): AuctionBid
   }
 
   type Subscription {
-    auctionBid(listingId: ID!): Bid
+    auctionBid(listingId: ID!): AuctionBid
   }
 `;
 

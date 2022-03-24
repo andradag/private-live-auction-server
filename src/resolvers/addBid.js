@@ -1,35 +1,39 @@
-const {Listing} = require("../models");
+const { Listing } = require("../models");
 const pubsub = require("./pubSub");
 
-const addBid = async (_, {input}, {user}) => {
-	try {
-		if (user) {
-			await Listing.findByIdAndUpdate(input.listingId, {
-				$push: {
-					bids: {
-						amount: input.amount,
-						user: user.id,
-						bidTime: input.bidTime,
-					},
-				},
-			});
+const addBid = async (_, { input }, { user }) => {
+  try {
+    if (user) {
+      const { status } = await Listing.findById(input.listingId);
 
-			const bid = {
-				amount: input.amount,
-				user,
-				listingId: input.listingId,
-				bidTime: input.bidTime,
-			};
+      if (status === "Live") {
+        await Listing.findByIdAndUpdate(input.listingId, {
+          $push: {
+            bids: {
+              amount: input.amount,
+              user: user.id,
+              bidTime: input.bidTime,
+            },
+          },
+        });
 
-			pubsub.publish("AUCTION_BID", {
-				auctionBid: bid,
-			});
+        const bid = {
+          amount: input.amount,
+          user,
+          bidTime: input.bidTime,
+          // listingId: input.listingId,
+        };
 
-			return bid;
-		}
-	} catch (error) {
-		console.log(`[ERROR]: Failed to add bid | ${error.message}`);
-	}
+        pubsub.publish("AUCTION_BID", {
+          auctionBid: { bid, status, listingId: input.listingId },
+        });
+
+        return { bid, status };
+      }
+    }
+  } catch (error) {
+    console.log(`[ERROR]: Failed to add bid | ${error.message}`);
+  }
 };
 
 module.exports = addBid;
